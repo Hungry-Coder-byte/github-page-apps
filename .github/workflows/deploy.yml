@@ -27,6 +27,12 @@ jobs:
         with:
           node-version: 22
 
+      - name: Verify Node Version
+        run: |
+          node -v
+          npm -v
+          which node
+
       - name: Install Dependencies
         run: npm install
 
